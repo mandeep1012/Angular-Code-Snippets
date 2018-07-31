@@ -1,18 +1,24 @@
-@import 'variables';
+@import "variables.scss";
 
-@mixin snipped-card-bg($color) {
+@mixin snippet-card-bg($color)
+{
     background: -moz-linear-gradient(225deg,transparent 30px , $color 30px);
     background: -webkit-linear-gradient(225deg,transparent 30px , $color 30px);
     background: -ms-linear-gradient(225deg,transparent 30px , $color 30px);
     background: -o-linear-gradient(225deg,transparent 30px , $color 30px);
     background: linear-gradient(225deg,transparent 30px , $color 30px);
-    
-}
+} 
 
-@mixin card-box-shadow() {
+@mixin card-box-shadow(){
     -webkit-box-shadow:rgba(0 ,0 ,0 ,0.1) -5px 5px 2px;
     -o-box-shadow:rgba(0 ,0 ,0 ,0.1) -5px 5px 2px;
     -moz-box-shadow:rgba(0 ,0 ,0 ,0.1) -5px 5px 2px;
     box-shadow:rgba(0 ,0 ,0 ,0.1) -5px 5px 2px;
-    
+}
+
+@mixin border-radius($size){
+    -moz-border-radius:$size;
+    -webkit-border-radius:$size;
+    border-radius:$size;
+
 }

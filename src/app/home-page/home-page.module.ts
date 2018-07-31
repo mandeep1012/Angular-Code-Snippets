@@ -2,19 +2,24 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomePageControllerComponent } from './home-page-controller/home-page-controller.component';
 import { SnippetAdderComponent } from './snippet-adder/snippet-adder.component';
-import { LanguageBarComponent } from './language-bar/language-bar.component';
 import { SnippetCardComponent } from './snippet-card/snippet-card.component';
+import { LanguageBarComponent } from './language-bar/language-bar.component';
 import { FlexLayoutModule } from '../../../node_modules/@angular/flex-layout';
+import { UtilityComponentModule } from '../utility-component/utility-component.module';
 
 @NgModule({
   imports: [CommonModule,
-    FlexLayoutModule],
+    FlexLayoutModule,
+    UtilityComponentModule],
   declarations: [
     HomePageControllerComponent,
     SnippetAdderComponent,
-    LanguageBarComponent,
-    SnippetCardComponent
+    SnippetCardComponent,
+    LanguageBarComponent
   ],
-  exports: [HomePageControllerComponent]
+  exports: [
+    HomePageControllerComponent
+  ]
+
 })
 export class HomePageModule {}
