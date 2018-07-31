@@ -1,6 +1,6 @@
 @import "variables.scss";
 
-@mixin snippet-card-bg($color)
+@mixin snipped-card-bg($color)
 {
     background: -moz-linear-gradient(225deg,transparent 30px , $color 30px);
     background: -webkit-linear-gradient(225deg,transparent 30px , $color 30px);
