@@ -6,11 +6,13 @@ import { SnippetCardComponent } from './snippet-card/snippet-card.component';
 import { LanguageBarComponent } from './language-bar/language-bar.component';
 import { FlexLayoutModule } from '../../../node_modules/@angular/flex-layout';
 import { UtilityComponentModule } from '../utility-component/utility-component.module';
-
+import {FormsModule} from '../../../node_modules/@angular/forms';
 @NgModule({
   imports: [CommonModule,
     FlexLayoutModule,
-    UtilityComponentModule],
+    UtilityComponentModule,
+    FormsModule
+  ],
   declarations: [
     HomePageControllerComponent,
     SnippetAdderComponent,

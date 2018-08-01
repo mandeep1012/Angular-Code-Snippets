@@ -15,6 +15,7 @@ h1 {
 #modal-body{
     position:relative;
     margin: 3em;
+    min-width: 30%;
     overflow-x: hidden;
     overflow-y:auto;
     background-color:$color-primary;
