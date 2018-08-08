@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+
 
 @Component({
   selector: 'app-modal-window',
@@ -6,12 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./modal-window.component.scss']
 })
 export class ModalWindowComponent implements OnInit {
-  showing = false;
+  @Input() header: string;
+  @Input() showing = false;
+  @Output() showingChange = new EventEmitter<boolean>();
+
 
 
   constructor() { }
 
   ngOnInit() {
+  }
+  close = () => {
+    this.showingChange.emit(false);
   }
 
 }
